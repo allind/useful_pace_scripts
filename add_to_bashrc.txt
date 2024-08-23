@@ -1,0 +1,9 @@
+This oneliner added to your bashrc will save every command you type to a bash_all_history file in your home directory.
+Don't remember where a file came from? grep 'filename' ~/.bash_all_history
+
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $USER $PWD "$(history 1)" >> ~/.bash_all_history'
+
+This is a useful alias to have
+
+alias list="ls -alth"
+
